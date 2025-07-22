@@ -1,3 +1,6 @@
+logsBucket: 'gs://devops-static-web'
+
+
 steps:
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   args: ['gcloud', 'storage', 'rsync', '-r', '.', 'gs://devops-static-web']
