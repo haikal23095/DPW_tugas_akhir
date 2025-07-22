@@ -1,0 +1,6 @@
+steps:
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  args: ['gcloud', 'storage', 'rsync', '-r', '.', 'gs://devops-static-web']
+  id: 'Deploy Static Website to GCS'
+
+timeout: '300s'
